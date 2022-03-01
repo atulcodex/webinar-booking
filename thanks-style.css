@@ -1,0 +1,358 @@
+/*--------- Google Font import -----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+
+:root
+{
+	/*---- colors -------*/
+	--primary-color: #f9980f;
+	--secondary-color: #1a1a1a;
+	--third-color: #ffffff;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 16px;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.container
+{
+	padding: 100px 10px 0 10px;
+}
+
+.white
+{
+	color: var(--third-color);
+}
+
+.btn
+{
+	display: block;
+	width: 100%;
+	background: var(--third-color);
+	border: none;
+	border-radius: 0.2rem;
+	margin: 1rem;
+	padding: 1rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn:hover
+{
+	transform: translateY(10px);
+}
+
+.btn a
+{
+	color: var(--secondary-color);
+	font-size: 0.8rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.heading
+{
+	color: var(--secondary-color);
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+}
+
+/*--------- Thanks content starts --------------*/
+.thanks-content i
+{
+	color: var(--primary-color);
+	font-size: 4rem;
+	text-align: center;
+	width: 100%;
+}
+
+.thanks-content .main-heading, .thanks-content .para-line
+{
+	text-align: center;
+}
+
+.thanks-content .main-heading
+{
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+.download-content
+{
+	background: #f6f6f6;
+	margin: 2rem 0;
+	padding: 2.4rem 0.5rem;
+}
+
+.download-content .heading
+{
+	color: var(--secondary-color);
+	font-size: 1.4rem;
+	text-align: left;
+}
+
+.download-details
+{
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.download-details .col
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.download-details .col h3
+{
+	color: var(--secondary-color);
+	font-size: 1rem;
+}
+
+.download-details .col p > i
+{
+	font-size: 1rem;
+	color: var(--secondary-color);
+}
+
+.download-details .col .download-link
+{
+	color: blue;
+}
+
+.order-content
+{
+	background: #f6f6f6;
+	margin: 2rem 0;
+	padding: 2.4rem 0.5rem;
+}
+
+.order-content .heading
+{
+	color: var(--secondary-color);
+	font-size: 1.4rem;
+	text-align: left;
+}
+
+.order-details
+{
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.order-details .col
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.order-details .col h3, .order-details .col p
+{
+	color: var(--secondary-color);
+	font-size: 1rem;
+}
+
+.extras-content
+{
+	background: var(--primary-color);
+	padding: 4rem 0.6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.extras-content .host-img
+{
+	width: 80px;
+	height: 80px;
+	border: none;
+	border-radius: 50%;
+}
+
+.extras-content .heading, .extras-content .para-line
+{
+	color: var(--third-color);
+	text-align: center;
+}
+
+.extras-content .heading
+{
+	font-size: 1.2rem;
+	padding: 0.5rem 0;
+}
+
+.extras-content .separator
+{
+	border: 1px solid var(--third-color);
+	width: 50px;
+}
+
+.social-media i
+{
+	font-size: 1.5rem;
+	color: var(--third-color);
+	cursor: pointer;
+}
+/*--------- Thanks content ends --------------*/
+
+
+
+
+/*--------------------------------------------------*/
+/*------------------ Desktop version ---------------*/
+/*--------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	.btn
+	{
+		width: fit-content;
+		padding: 1rem 3rem;
+	}
+
+	.btn a
+	{
+		color: var(--secondary-color);
+		font-size: 0.8rem;
+		font-weight: 600;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.container
+	{
+		padding: 5rem;
+	}
+
+	.container > .row
+	{
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+	}
+
+	.thanks-content
+	{
+		width: 100%;
+	}
+
+	.extras-content
+	{
+		width: 70%;
+	}
+
+	.thanks-content .main-heading
+	{
+		font-size: 3rem;
+		font-weight: 600;
+	}
+
+	.download-content
+	{
+		padding: 2rem;
+	}
+
+	.download-details
+	{
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 0.5rem;
+	}
+
+	.download-details .col
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.order-content
+	{
+		padding: 2.4rem;
+		margin: 0;
+	}
+
+	.order-details
+	{
+		padding: 1rem 0 0 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 8px;
+	}
+
+	.order-details .col
+	{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.extras-content
+	{
+		padding: 4rem;
+	}
+
+	.extras-content .host-img
+	{
+		width: 100px;
+		height: 100px;
+	}
+
+	.extras-content .heading
+	{
+		font-size: 1.8rem;
+		padding: 0.5rem 0;
+	}
+
+	.extras-content .separator
+	{
+		border: 1px solid var(--third-color);
+		width: 50px;
+		margin: 1.5rem 0;
+	}
+
+	.social-media i
+	{
+		font-size: 2rem;
+	}
+}
