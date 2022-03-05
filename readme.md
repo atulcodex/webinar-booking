@@ -26,7 +26,7 @@ This is a Responsive quick and easy customisable Modern Multipurpose Webinar boo
 
 
 
-[![Webinar booking website template](https://i.ibb.co/vwN8cgW/live-demo.png)](#)
+[![Webinar booking website template](https://i.ibb.co/vwN8cgW/live-demo.png)](https://webinar-booking.netlify.app/)
 
 
 
